@@ -1,0 +1,421 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "9acf3e88-7712-49f5-8e8a-b96e51c38191",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "6d25d22a-4f93-4814-9f79-d4ba3c3de2c9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_list1 = [0, 1, 2, 3, 4]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "40730c56-8790-44fe-b5c0-e120b3527d8e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_array1 = np.array(my_list1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "e6b16079-69c7-4f0c-9e73-d6785977c79f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0, 1, 2, 3, 4])"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_array1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "426bed7d-13c3-4ed5-852a-61cdd4fc1f80",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_list2 = [10, 11, 12, 13, 14]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "4648c1ea-72e8-42aa-b88c-aa034831e1b4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_lists = [my_list1, my_list2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "1a1d4757-15ef-4605-ae23-c0470ac781e5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_array2 = np.array(my_lists)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "824e2443-d634-42e7-8568-09971e751d7d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 0,  1,  2,  3,  4],\n",
+       "       [10, 11, 12, 13, 14]])"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_array2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "08788181-ed62-4516-9285-c4aeb887df4b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 5)"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_array2.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "487d13b3-f7ed-482b-b6b7-faf71b9ac35d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dtype('int32')"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_array2.dtype"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "2e14e30d-9fcf-4e43-a4e4-46b74424053f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0., 0., 0., 0., 0., 0.])"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.zeros(6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "9ea6dfc7-2e03-4225-8d92-6b82e35b3658",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_zeros_array = np.zeros(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "0b44b9bd-c3ea-4684-9914-7083f81d8ad8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0., 0., 0., 0., 0.])"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_zeros_array "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "e72385b5-b2b7-421c-896c-c5a987dc349e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dtype('float64')"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_zeros_array.dtype\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "8fa6ea27-258e-44a4-be3a-8027c49ebb82",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1., 1., 1., 1., 1.],\n",
+       "       [1., 1., 1., 1., 1.],\n",
+       "       [1., 1., 1., 1., 1.],\n",
+       "       [1., 1., 1., 1., 1.],\n",
+       "       [1., 1., 1., 1., 1.]])"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.ones([5,5])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "7ded78a2-5163-42aa-b582-28d46abea0ef",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0.],\n",
+       "       [0., 0., 0., 0., 0.]])"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.zeros([5, 5])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "65acefba-03e1-4370-884d-019a4a26b8af",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0., 0., 0., 0., 0.])"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.empty(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "d6b4fc0e-768d-4ba2-959d-e0a4a9bd85f3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[6.20180931e-312, 6.20181507e-312, 6.20181506e-312,\n",
+       "        6.20181510e-312, 6.20181510e-312, 6.20181510e-312],\n",
+       "       [6.20181510e-312, 6.20181510e-312, 6.20181510e-312,\n",
+       "        6.20181510e-312, 6.20181510e-312, 6.20181510e-312],\n",
+       "       [6.20181510e-312, 6.20181509e-312, 6.20181509e-312,\n",
+       "        6.20181509e-312, 6.20181509e-312, 6.20181509e-312],\n",
+       "       [6.20181509e-312, 6.20181509e-312, 6.20181509e-312,\n",
+       "        6.20181509e-312, 6.20181509e-312, 6.20181509e-312],\n",
+       "       [6.20181509e-312, 6.20181509e-312, 6.20181509e-312,\n",
+       "        6.20181509e-312, 6.20181509e-312, 6.20181509e-312],\n",
+       "       [6.20181509e-312, 6.20181509e-312, 6.20181509e-312,\n",
+       "        6.20181509e-312, 6.20181509e-312, 6.20181508e-312]])"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.empty([6, 6])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "46aba548-5851-4ff3-9e29-f0c51a8b7684",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1., 0., 0., 0.],\n",
+       "       [0., 1., 0., 0.],\n",
+       "       [0., 0., 1., 0.],\n",
+       "       [0., 0., 0., 1.]])"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.eye(4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "e8cdc1c4-2891-4a12-b011-3cbdc34fb2d1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0, 1, 2, 3, 4])"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.arange(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "713a7689-fa3d-4328-a088-3b64f734395f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 5,  7,  9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37,\n",
+       "       39, 41, 43, 45, 47, 49])"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.arange(5, 50, 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "884f96ca-4700-40be-8492-658745d06e51",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
